@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("loginpagebg.png");
+    background-position: center; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: Georgia,'Times New Roman', serif;
+  }
+
+  
+  .login-container {
+    background-color:#050A30;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 230px; 
+    border-radius: 23px;
+    flex-direction:center;
+    margin: 0;
+    height: 64%; 
+    margin-left: 780px;
+    margin-top: 30px;
+  }
+
+  .login-head{
+    display:flex;
+    place-content: center;
+    margin-bottom: 20px;
+    color: #C9E4EB;
+    margin-top: -15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: bottom 0;
+    width: 150px; 
+    height: 30px;
+    left: 50px; 
+    top: 10px;  
+    color: #ffffff;
+    font-size: 17.5px; 
+    font-weight: 600; 
+    word-wrap: break-word;
+    font-family: Georgia,'Times New Roman', serif;
+    
+  }
+  
+  i{
+    color:#C9E4EB;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffffc7;
+    border-radius: 14px; 
+    width: 220px; 
+    height: 20px; 
+    position: relative;
+    background-color: #ffffff;
+  }
+
+    
+  .button-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+  
+  #signin-button{
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: none;
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 95px; 
+    height: 40px; 
+    font-family:  Georgia,'Times New Roman', serif;
+    font-weight: 700;
+    padding-right: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+   
+  submit:hover {
+    background-color:#e0e0eb;
+  }
+  
+  /*button {
+    border-radius: 14px;
+    background-color: #a5adff;
+    border: none;
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 95px; 
+    height: 40px; 
+    font-family:  Georgia,'Times New Roman', serif;
+    font-weight: 700;
+  }
+ 
+
+   submit:hover {
+    background-color:#908dea;
+  }
+  
+  .sigin-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .signin-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .sigin-button:hover span {
+    
+  }
+  
+  .sigin-button:hover span:after {
+    opacity: 1;
+    right: 0;}*/
+  
+  .new-account{
+     width: 300px;
+     color: #ffffff;
+     font-size: 15px; 
+     font-family: Georgia,'Times New Roman', serif;
+     font-weight: 550;
+     word-wrap: break-word;
+     display: inline-flex;
+     white-space: nowrap;
+     padding-right: 10px;
+     margin-top: -10px;
+  }
+
+  .new-account a{
+    color: #657685;
+  }
+  .forget-account a{
+    color: #e0e0eb;
+  }
+  .forget-account{
+     width: 250px;
+     color: #C9E4EB;
+     font-size: 15px; 
+     font-family: Georgia,'Times New Roman', serif;
+     font-weight: 550;
+     place-content: center;
+     text-align: center;
+     margin-top: -10px;
+  }
+
+.logo
+{
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right:10px;
+    margin-bottom: 280px;
+    margin-top: 2px;
+    margin-left: 8%;
+    margin-right: 1px;
+    
+}

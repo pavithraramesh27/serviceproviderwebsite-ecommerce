@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Hover Effects</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+    }
+    
+    .card {
+        width: 300px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card h3 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #333;
+    }
+    
+    .card p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #666;
+    }
+    
+    .card p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <h3>Convenience</h3>
+    <p>Say goodbye to endless phone calls and waiting for callbacks. With HomeServe, you can book a service anytime, anywhere, using our user-friendly mobile app or website. Our streamlined booking process ensures that help is just a few taps away.</p>
+</div>
+<div class="card">
+    <h3>Quality Assurance</h3>
+    <p>We take pride in partnering with licensed and experienced technicians who have undergone rigorous background checks and training. Rest assured, the professionals dispatched to your home are equipped with the skills and expertise needed to get the job done right the first time.</p>
+</div>
+<div class="card">
+    <h3>Transparency</h3>
+    <p>No hidden fees or surprises. At HomeServe, we believe in transparency in pricing and service. You'll receive upfront quotes for the requested services, and our billing system is straightforward, ensuring that you know exactly what you're paying for.</p>
+</div>
+<div class="card">
+    <h3>Reliability</h3>
+    <p>Emergencies can happen at any time. That's why we offer 24/7 support to handle your urgent service requests promptly. Whether it's a leaky faucet or a faulty electrical outlet, our team is ready to assist you around the clock.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aboutus</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        
+#wrapp
+{
+    width:100%;
+    margin: auto;
+}
+
+i{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #F2F0FC;
+}
+
+nav {
+   /*background: #172E4A;
+     /*background: #001220;*/
+    background-color:#050A30;
+    align-items: center;
+    width: 75%;
+    display: flex;
+    justify-content:center;
+    position: relative;
+    height: 60px;
+    border-radius: 10px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+
+}
+.logo
+{
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right:10px;
+    margin-left: 2%;
+    margin-top: 2px;
+}
+
+.userpic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+nav p{
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+nav ul{
+    width: 90%;
+    text-align:center;
+    font-size: 16px; 
+    font-weight: 600; 
+    font-family: 'Georgia','Times New Roman', serif;
+    float: left;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;  
+}
+
+nav ul li a{
+    /*color: #FEFCFF;*/
+    /*color:#010101;*/
+    color:#F2F0FC;
+    text-decoration: none;
+}
+
+.sub-menu-wrap{
+    position:absolute;
+    top: 100%;
+    right:10%;
+    width:320px;
+    max-height: 0px;
+    overflow: hidden;
+    transform: max-height 0.5s;
+}
+   
+.sub-menu-wrap.openmenu{
+    max-height: 400px;
+}
+
+.sub-menu{
+/*background-color:#cae8ffb6;*/
+/*background-color: #172E4A;*/
+background-color: #333;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.622);
+padding: 20px;
+margin: 10px;
+
+}
+
+.user-info{
+    font-weight: 500;
+    padding-left: 5px;
+    color:#FEFCFF;
+}
+
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border:0;
+    height:1px;
+    width:90%;
+    background: #e5e5e5;
+    margin:10px 10px 10px 10px;
+  }
+
+.submenu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#FEFCFF;
+    margin: 12px 0;
+}
+
+.submenu-link p{
+    width: 100%;
+
+}
+.submenu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.submenu-link p{
+    font-size: 15px;
+    transition: transform 0.5s;
+}
+
+.submenu-link:hover p{
+    transform: translate(5px);
+}
+.submenu-link:hover p{
+    font-weight: 500;
+
+}
+
+.content-1{
+    width:95%;
+    height:300px;
+    background-color:#CAE8FF;
+    margin-left: 2%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    line-height: 1.5;
+    padding-left: 30px;
+}
+@keyframes slidein {
+  from {
+    margin-left: 30%;
+    width: 70%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 70%;
+  }
+}
+
+.content-1a{
+    display: flex;
+    margin-top: 15px;
+}
+.content-1 p{
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count:1;
+  animation-direction: alternate;
+  color:#010101;
+}
+
+.content-2{
+    width:95%;
+    height: 30%;
+    display: flex;
+    gap: 5px;
+    margin-left: 30px;
+}
+
+
+.card {
+        width: 300px;
+        background-color: #050A30;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        margin:20px;
+        
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card h3 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #F2F0FC;
+        text-align: center;
+    }
+    
+    .card p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #cae8ffac;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align:left;
+    }
+    
+    .card p:last-child {
+        margin-bottom: 0;
+    }
+
+.content-3{
+    width:90%;
+    height:370px;
+    background-color:#CAE8FF;
+    margin-left: 5%;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+
+.content-3 li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+ul{
+    padding-left: 40px;
+}
+.picture1{
+    width: 240px;
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 8px;
+}
+
+
+
+</style>
+    </head>
+    <body>
+       
+     <div id="wrapp-class">
+
+           <nav>
+               <div class="logo">
+                <span><img src="newlogo.jpeg" class="logo">
+                <!--- <p style="color: white; font-weight: 400;font-size: 14px; font-family:cursive;">BookEaze</p></span>  --> 
+                </div>
+        
+                <p style="color: #F2F0FC; font-family:HK grotesk; font-size:17px;">ServEaze</p></span>
+                <ul>
+                <li><i class="fa-solid fa-house fa-lg" ></i><a href="homepage.php">  Home</a></li>
+                <li><i class="fa-solid fa-handshake-simple fa-lg" ></i><a href="Aboutus.html">  About Us</a></li>
+                <li><i class="fa-solid fa-briefcase fa-lg" ></i><a href="services.html">  Services</a></li>
+                <li><i class="fa-solid fa-bell fa-lg" ></i><a href="notification.html">  Notification</a></li>
+                <li><i class="fa-solid fa-user fa-lg" ></i><a href="account.html">  Account</a></li>
+                </ul> 
+        
+               <img src="user.png" class="userpic" onclick="toggleMenu()">
+               <div class="sub-menu-wrap" id="submenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                        <img src="user.png" >
+                        <h2>User name</h2>
+                        </div>
+                        <hr>
+            <a href="editprofile.html" class="submenu-link">
+                <i class="fa-solid fa-user-pen fa-lg" style=" color:#FEFCFF;"></i>
+                <p>Edit Profile</p>
+                <span></span>
+            </a>
+        
+            <a href="uploadimg.html" class="submenu-link">
+                <i class="fa-regular fa-image fa-lg" style=" color:#FEFCFF;"></i>
+                <p>Upload Photo</p>
+                <span></span>
+            </a>
+        
+            <a href="#" class="submenu-link">
+                <i class="fa-solid fa-location-dot fa-lg" style=" color:#FEFCFF;"></i>
+                <p>Change Location</p>
+                <span></span>
+            </a>
+        
+            
+            <a href="helpsupport.html" class="submenu-link">
+                <i class="fa-solid fa-headset fa-lg" style=" color:#FEFCFF;"></i>
+                <p>Help & Support</p>
+                <span></span>
+            </a>
+        
+            <a href="logout.php" class="submenu-link">
+                <i class="fa-solid fa-right-from-bracket fa-lg" style=" color:#FEFCFF;"></i>
+                <p>Logout</p>
+                <span></span>
+            </a>
+            </div>
+            </div>
+        </nav>
+                    
+   <div class="content-1">
+        <h2>Welcome to ServEaze: Your Trusted Home Service Companion</h2>
+        <div class="content-1a">
+        <p>ServEaze understands how difficult it may be to maintain your house from installing a new TV to repairing a broken refrigerator, we understand how important it is to have dependable experts at your fingertips. We are here to make your life easier by giving you quick access to a variety of home services on a single, effective platform.<br>
+        <br>
+        Our website makes it easier to find and recommend reliable workers for any need, from emergency plumbing repairs to weekly air conditioner maintenance, so you can relax knowing that your house is in excellent capable hands</p>
+        <img src="pic2.jfif" class="picture1">
+    </div>
+</div>
+    <h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align: center;">Why Choose ServEaze?</h2>
+    <div class="content-2">
+      <div class="card">
+            <h3>Convenience</h3>
+            <br>
+            <p>Say goodbye to endless phone calls and waiting for callbacks. With HomeServe, you can book a service anytime, anywhere, using our user-friendly mobile app or website. Our streamlined booking process ensures that help is just a few taps away.</p>
+        </div>
+        <div class="card">
+            <h3>Quality Assurance</h3>
+            <br>
+            <p>We take pride in partnering with licensed and experienced technicians who have undergone rigorous background checks and training. Rest assured, the professionals dispatched to your home are equipped with the skills and expertise needed to get the job done right the first time.</p>
+        </div>
+        <div class="card">
+            <h3>Transparency</h3>
+            <br>
+            <p>No hidden fees or surprises. At HomeServe, we believe in transparency in pricing and service. You'll receive upfront quotes for the requested services, and our billing system is straightforward, ensuring that you know exactly what you're paying for.</p>
+        </div>
+        <div class="card">
+            <h3>Reliability</h3>
+            <br>
+            <p>Emergencies can happen at any time. That's why we offer 24/7 support to handle your urgent service requests promptly. Whether it's a leaky faucet or a faulty electrical outlet, our team is ready to assist you around the clock.</p>
+        </div>
+   
+    </div>
+    <div class="content-3">
+<h2  style="text-align:center;margin-top: 5px;padding-top: 15px;">Our Services</h2><br>
+   <p style="text-align: center;font-size: 20px;font-weight: 600;padding-bottom: 15px;"> ServEaze offers a comprehensive range of home services, including:</p>
+ <ul  style="list-style-type:disc;">
+    <li><strong>TV Repair:</strong> From screen replacements to audio issues, our technicians can restore your television to optimal performance.</li><br>
+<li><strong> Maintenance:</strong> Keep your air conditioner running smoothly with our regular maintenance services, ensuring maximum cooling efficiency and longevity.</li><br>
+<li><strong>Servicing:</strong>  rust our experts to diagnose and fix any issues with your refrigerator, so your perishables stay fresh.</li><br>
+<li><strong> Plumbing Solutions:</strong>  Whether it's a clogged drain or a burst pipe, our plumbers are equipped to handle all your plumbing needs.</li><br>
+<li><strong> 
+Electrician Assistance:</strong>  From rewiring to fixture installations, our electricians deliver safe and reliable electrical services for your home.</li><br>
+</ul>  
+</div>
+    
+    </div>
+                    <script src="script.js"></script>
+                </body>
+                </html>
